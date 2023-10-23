@@ -33,4 +33,37 @@ createuser Nutzername //erstellt einen neuen Nutzer
   ```bash
 createdb -E UTF8 -O Nutzername Datenbankname //erstellt eine Datenbank und weist sie dem Nutzer zu
   ```
+  ## Datenbank löschen
+  
+  ```bash
+sudo -u postgres -i  //wechselt zum postgres Nutzer
+dropdb Datenbankname //löscht die Datenbank
+  ```
+  ## Datenbankname Passwort zuweisen
+  
+  ```bash
+
+psql Datenbankname //wechselt zur Datenbank
+\password //wechselt das Passwort
+  ```
+## PostgreSql Datentypen
+  
+* [Datenbank](https://www.postgresqltutorial.com/postgresql-data-types/)
+
+
+### PostgreSql Tabellen erstellen mit Schlüssel
+```sql
+CREATE TABLE Tabellenname (
+  Id serial PRIMARY KEY,
+    Spaltenname datatype,
+);
+```
+
+```sql
+
+
+
+
+
+
 
