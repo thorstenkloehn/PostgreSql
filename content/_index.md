@@ -46,20 +46,18 @@ dropdb Datenbankname //löscht die Datenbank
 psql Datenbankname //wechselt zur Datenbank
 \password //wechselt das Passwort
   ```
-## PostgreSql Datentypen
-  
-* [Datenbank](https://www.postgresqltutorial.com/postgresql-data-types/)
-
-
-### PostgreSql Tabellen erstellen mit Schlüssel
-```sql
-CREATE TABLE Tabellenname (
-  Id serial PRIMARY KEY,
-    Spaltenname datatype,
-);
+## Datenbank wiederherstellen
+    
+```bash
+sudo -u postgres -i  //wechselt zum postgres Nutzer
+createdb kurs //erstellt eine Datenbank
+wget bookstore.backup //lädt die Datenbank herunter
+pg_restore  -d kurs bookstore.backup //Datenbank wiederherstellen
 ```
 
-```sql
+
+
+
 
 
 

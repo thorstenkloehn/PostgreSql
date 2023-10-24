@@ -53,6 +53,34 @@ Wert/Wert; //  Geteilt
 Wert%Wert; //  Modulo
 ```
 
+## Anzahl der Datensätze ausgeben
+```sql
+
+SELECT COUNT(*) FROM Tabellename; //  Anzahl der Datensätze ausgeben
+```
+## Anzahl der Datensätze ausgeben filtern
+```sql
+SELECT COUNT(*) FROM Tabellename WHERE Bedingung; //  Anzahl der Datensätze ausgeben Daten filtern
+```
+## Spalten ausgeben ohne doppelte Datensätze
+```sql
+SELECT DISTINCT Spaltenname FROM Tabellename //  Spalten ausgeben ohne doppelte Datensätze
+```
+## Anzahl der Datensätze ausgeben ohne doppelte Datensätze
+```sql
+SELECT COUT(DISTINCT Spaltenname) FROM Tabellename //  Anzahl der Datensätze ausgeben ohne doppelte Datensätze
+```
+## Daten sortieren mit wie Muster-Operator
+
+```sql
+SELECT*FROM Tabellename WHERE Spaltenname LIKE Bedingung; // Daten sortieren mit wie Muster-Operator
+```
+## Daten sortieren mit wie Muster-Operator
+Muster-Operator Befehle aufgelistet
+* % //  beliebig viele Zeichen
+* _ //  ein Zeichen
+
+
 
 
 
