@@ -80,9 +80,61 @@ Muster-Operator Befehle aufgelistet
 * % //  beliebig viele Zeichen
 * _ //  ein Zeichen
 
+## Konsole Befehle PostgreSql
+```bash
+psql Datenbankname  // Datenbank öffnen
+createuser Nutzername //  Benutzer erstellen
+createdb Datenbankname //  Datenbank erstellen
+dropdb Datenbankname //  Datenbank löschen
+dropuser Nutzername //  Benutzer löschen
 
-
-
-
-
-
+```
+## Datenbanken anzeigen mit PostgreSql Konsole
+```bash
+psql \l //  Datenbanken anzeigen
+psql \c //  Datenbank wechseln
+psql \dt //  Tabellen anzeigen
+psql \q //  Konsole verlassen
+psql \dn //  Schemata anzeigen
+psql \df //  Funktionen anzeigen
+psql \dv //  Views anzeigen
+psql \du //  Benutzer anzeigen
+psql \dp //  Berechtigungen anzeigen
+```
+## Daten sortieren mit In Operator
+```sql
+SELECT*FROM Tabellename WHERE Spaltenname IN (Wert,Wert,Wert); //  Daten sortieren mit In Operator
+```
+## Daten sortieren mit Zwischen Operator und operator
+```sql
+SELECT*FROM Tabellename WHERE Spaltenname BETWEEN Wert AND Wert; //  Daten sortieren mit Zwischen Operator
+```
+## Daten sortiert nach Spaltenname
+```sql
+SELECT*FROM Tabellename ORDER BY Spaltenname ; //  Daten sortiert nach Spaltenname
+```
+## Daten sortiert nach Spaltenname absteigend
+```sql
+SELECT*FROM Tabellename ORDER BY Spaltenname DESC; //  Daten sortiert nach Spaltenname absteigend
+```
+## Daten sortiert nach Spaltenname aufsteigend
+```sql
+SELECT*FROM Tabellename ORDER BY Spaltenname ASC; //  Daten sortiert nach Spaltenname aufsteigend
+```
+## Daten unter 10 ausgeben
+```sql
+SELECT*FROM Tabellename  LIMIT 10; //  Daten unter 10 ausgeben
+```
+--------------------------------------------------------------
+## Daten sortiert nach Spaltenname und unter 20  ausgeben ab 15
+```sql
+SELECT*FROM Tabellename ORDER BY Spaltenname LIMIT 20 OFFSET 15; //  Daten sortiert nach Spaltenname und unter 20  ausgeben ab 15
+```
+## Daten sortiert nach Spaltenname und unter 20 ausgeben ab 15
+```sql
+SELECT*FROM Tabellename ORDER BY Spaltenname LIMIT 20 OFFSET 15; //  Daten sortiert nach Spaltenname und unter 20 ausgeben ab 15
+```
+## Daten sortiert nach Spaltenname und unter 20 ausgeben ab 15 mit Wie Muster-Operator
+```sql
+SELECT*FROM Tabellename WHERE Spaltenname LIKE 'Wert%' ORDER BY Spaltenname LIMIT 20 OFFSET 15; //  Daten sortiert nach Spaltenname und unter 20 ausgeben ab 15 mit Wie Muster-Operator
+```
