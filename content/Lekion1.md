@@ -126,15 +126,20 @@ SELECT*FROM Tabellename ORDER BY Spaltenname ASC; //  Daten sortiert nach Spalte
 SELECT*FROM Tabellename  LIMIT 10; //  Daten unter 10 ausgeben
 ```
 --------------------------------------------------------------
-## Daten sortiert nach Spaltenname und unter 20  ausgeben ab 15
+---------------------------------------------------------------
+## Daten sortiert nach Spaltenname und unter 20  ausgeben ab 15 aufsteigend
 ```sql
-SELECT*FROM Tabellename ORDER BY Spaltenname LIMIT 20 OFFSET 15; //  Daten sortiert nach Spaltenname und unter 20  ausgeben ab 15
+SELECT*FROM Tabellename ORDER BY Spaltenname ASC LIMIT 20 OFFSET 15; //  Daten sortiert nach Spaltenname und unter 20  ausgeben ab 15 aufsteigend
 ```
-## Daten sortiert nach Spaltenname und unter 20 ausgeben ab 15
+## Daten sortiert nach Spaltenname und unter 20  ausgeben ab 15 absteigend
 ```sql
-SELECT*FROM Tabellename ORDER BY Spaltenname LIMIT 20 OFFSET 15; //  Daten sortiert nach Spaltenname und unter 20 ausgeben ab 15
+SELECT*FROM Tabellename ORDER BY Spaltenname DESC LIMIT 20 OFFSET 15; //  Daten sortiert nach Spaltenname und unter 20  ausgeben ab 15 absteigend
 ```
-## Daten sortiert nach Spaltenname und unter 20 ausgeben ab 15 mit Wie Muster-Operator
+## Daten sortiert nach Spaltenname und unter 20  ausgeben ab 15 aufsteigend mit wie Muster-Operator
 ```sql
-SELECT*FROM Tabellename WHERE Spaltenname LIKE 'Wert%' ORDER BY Spaltenname LIMIT 20 OFFSET 15; //  Daten sortiert nach Spaltenname und unter 20 ausgeben ab 15 mit Wie Muster-Operator
+SELECT*FROM Tabellename WHERE Spaltenname LIKE 'Wert%' ORDER BY Spaltenname ASC LIMIT 20 OFFSET 15; //  Daten sortiert nach Spaltenname und unter 20  ausgeben ab 15 aufsteigend mit wie Muster-Operator
+```
+## Daten sortiert nach Spaltenname und unter 20  ausgeben ab 15 absteigend mit wie Muster-Operator
+```sql
+SELECT*FROM Tabellename WHERE Spaltenname LIKE 'Wert%' ORDER BY Spaltenname DESC LIMIT 20 OFFSET 15; //  Daten sortiert nach Spaltenname und unter 20  ausgeben ab 15 absteigend mit wie Muster-Operator
 ```
