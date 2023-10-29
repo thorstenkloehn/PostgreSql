@@ -125,8 +125,6 @@ SELECT*FROM Tabellename ORDER BY Spaltenname ASC; //  Daten sortiert nach Spalte
 ```sql
 SELECT*FROM Tabellename  LIMIT 10; //  Daten unter 10 ausgeben
 ```
---------------------------------------------------------------
----------------------------------------------------------------
 ## Daten sortiert nach Spaltenname und unter 20  ausgeben ab 15 aufsteigend
 ```sql
 SELECT*FROM Tabellename ORDER BY Spaltenname ASC LIMIT 20 OFFSET 15; //  Daten sortiert nach Spaltenname und unter 20  ausgeben ab 15 aufsteigend
