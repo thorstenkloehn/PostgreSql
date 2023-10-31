@@ -23,3 +23,16 @@ Lektion 3
   ```sql
     DROP TABLE Tabellename; // Tabelle entfernen
   ```
+## PostgreSQL Spalte hinzufügen
+  ```sql
+    ALTER TABLE Tabellename ADD Spaltenname Datentyp; // Spalte hinzufügen
+  ```
+## PostgreSQL Spalte entfernen
+  ```sql
+    ALTER TABLE Tabellename DROP COLUMN Spaltenname; // Spalte entfernen
+  ```
+## PostgreSQL Spalte umbenennen
+  ```sql
+    ALTER TABLE Tabellename RENAME COLUMN Spaltenname TO Spaltenname; // Spalte umbenennen
+  ```
+
