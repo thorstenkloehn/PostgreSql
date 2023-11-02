@@ -91,6 +91,7 @@ Lektion 3
   Spaltenname BIGSERIAL PRIMARY KEY //  Primärschlüssel in Tabellen erstellen HINWEIS Alias für BIGINT PRIMARY KEY
   ```
   
+  
 
 
 
